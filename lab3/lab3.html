@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loty kosmiczne</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <script src="jquery-3.7.1.js"></script>
+
+</head>
+<body>
+  <div class="header">
+   <h1><b>Strona Główna</b></h1>
+  </div>
+
+  <div class="main">
+
+    <div class="menu">
+      <div class="container-menu"> <a href="main.html"><img src="photos/menu4.png" width="25" height="auto"> </a> </div>
+      <div class="container-menu"> <a href="strona1.html"><h2>ELT</h2> </a> </div>
+      <div class="container-menu"> <a href="strona2.html"><h2>Jowiszz</h2> </a> </div>
+      <div class="container-menu"> <a href="strona3.html"><h2>SpaceX</h2> </a> </div>
+      <div class="container-menu"> <a href="strona4.html"><h2>Mars</h2> </a> </div>
+      <div class="container-menu"> <a href="strona5.html"><h2>IDK</h2>  </a>  </div>
+    </div>
+<!--
+    <script>
+        $(document).ready(function(){
+            alert("jQuery działa!");
+        });
+    </script> -->
+
+<div id="animacjaTestowal" class="test-block">Kliknij, a się powiększe</div>
+    <script>
+
+        $("#animacjaTestowal").on("click", function(){
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontsize: "3em",
+                borderwidth: "10px"
+        }, 1500);
+    });
+    </script>
+
+<div id="animacjaTestowa2" class="test-block">
+    Najedź kursorem, a się powiększe 
+</div>
+
+    <script>
+        $("#animacjaTestowa2").on({
+            "mouseover": function() {
+                $(this).animate({
+                    width: 300
+                }, 800);
+            },
+            "mouseout" : function() {
+                $(this).animate({
+                    width: 200
+                },800);
+            },
+        });
+    </script> 
+
+<div id="animacjaTestowa3" class="test-block">
+    Klikaj, abym urósł
+</div>    
+
+<script>
+$("#animacjaTestowa3").on("click", function(){
+        $(this).animate({
+            width: "+=" + 50,
+            height: "+=" + 10,
+            opacity: "--" + 0.1,
+            duration: 3000 //inny sposób deklaracji czasu trwania animacji
+        });
+});
+</script>
+</body>
+</html>
