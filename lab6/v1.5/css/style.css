@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/Starship.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Klasa do formatowania tekstu */
+.formatted-text {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+
+/* Styl menu */
+
+.menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+}
+
+.container-menu {
+    margin: 10px;
+    text-align: center;
+    background-color: black; 
+    opacity: 0.7;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.container-menu:hover {
+    border: 2px solid #ccc;
+    opacity: 0.9;
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+.container-menu h2 {
+    margin: 0;
+    font-size: 1.5em; 
+}
+
+/*inne*/
+
+.text-container {
+    margin-left: 2cm;
+    margin-right: 2cm;
+    text-align: justify;
+    background-color: rgb(95, 95, 95, 0.5); 
+    /* opacity: 0.5; */
+    padding: 20px;
+    border-radius: 10px; 
+
+}
+
+.text-container h2 {
+    color: rgba(255, 255, 255, 2);
+    text-shadow: 2px 2px 4px black;
+}
+.text-container p {
+    text-indent: 20px;
+}
+.text-container img {
+    opacity: 1;
+}
+
+/* Style do obrazów */
+.image-container {
+    float: left;
+    margin: 10px;
+    shape-outside: circle(50%);
+}
+
+/* Style dla formularza kontaktowego */
+form {
+    margin: 1cm;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    opacity: 0.6;
+}
+
+/*stopka*/
+footer {
+    margin-top: 2cm;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    opacity: 0.6;
+
+}
+
+.footer-span {
+    text-align: center;
+}
+
+.test-block {
+    width: 200px;
+    border: 2px solid rgba(71, 236, 30, 1);
+    background: rgba(71, 236, 30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
