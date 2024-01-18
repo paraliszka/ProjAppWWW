@@ -1,0 +1,86 @@
+/* Stylizacja dla całego dokumentu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylizacja dla elementu nagłówka */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stylizacja dla elementu nawigacji */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Stylizacja dla listy w nawigacji */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylizacja dla elementów listy w nawigacji */
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Stylizacja dla linków w nawigacji */
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Stylizacja dla sekcji */
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Stylizacja dla formularza */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+/* Stylizacja dla pól tekstowych i obszarów tekstowych w formularzu */
+form input[type="text"],
+form textarea {
+    width: 100%;
+    min-height: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+/* Stylizacja dla przycisku wysyłania formularza */
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Stylizacja dla przycisku wysyłania formularza przy najechaniu */
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
